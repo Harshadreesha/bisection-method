@@ -1,0 +1,15 @@
+deff('y=f(x)','y=x^3-2*x-5');
+a=2,b=3;
+d=0.0001;
+c=1
+printf('succesive approximations\t.a\t.b\t.m\tf (m)\t:\n');
+while abs (a-b)>d
+    m=(a+b)/2;
+printf('t%f.\t%f.\t%f.\t%f\n',a,b,m,f(m));
+if f(m)f(a)>0
+    a-m;
+else  b=m;
+end
+c=c+1;
+end
+printf('the solution of equation after % 1 iteration is %g',c,m);
